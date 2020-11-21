@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator Kurs Rupiah</title>
+</head>
+<body>
+    <center>
+        <br><br><br><br><br>
+        <h1> Kurs Mata Uang</h1>
+        <br>
+        <label for=""> Nilai Mata Uang </label>
+        <input type="number" id="input_kurs" value="">
+        <br><br>
+        <input type="submit" value="Dollar US" onclick="Dollar_US()">
+        <input type="submit" value="Dollar SG" onclick="Dollar_SG()">
+        <input type="submit" value="Ringgit" onclick="Ringgit()">
+        <input type="submit" value="Yen" onclick="Yen()">
+        <input type="submit" value="Euro" onclick="Euro()">
+        <input type="submit" value="Riyal" onclick="Riyal()">
+    
+        <p id="hasil"> Hasil dalam (Rp.): </p>
+        <br>
+        <script>
+            function Dollar_US(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 9915;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Dollar_SG(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 13472;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Ringgit(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 874;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Yen(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 120;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Euro(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 15888;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Riyal(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 3592;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+        </script>
+    </center>
+</body>
+</html>
