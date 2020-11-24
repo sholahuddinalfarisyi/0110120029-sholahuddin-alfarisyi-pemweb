@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <title>FORMULIR VALIDASI</title>
+    </head>
+
+  <body>
+    <style>
+     .container {
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        left: 10%;
+
+      }
+     .button {
+        color: black;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px 32px;
+        font-size: 15px;
+      }
+    </style>
+
+     <img src="https://akcdn.detik.net.id/community/media/visual/2018/05/03/79deccbf-4089-4146-b5c3-1e8e9fc170d7.jpeg?w=700&q=90" style="width: 100%">
+
+     <form action="login.html" method="post">
+    <div class="container">
+        Nama :<br/>
+        <input type="text" required="" maxlength="30" placeholder="Masukan nama" id="nama" name="nama"><br/><br/>
+        Email :<br/>
+        <input type="email" required="" placeholder="Masukan email" id="email" name="email"><br/><br/>
+        Jam Keberangkatan :<br/>
+        <input type="time" required="" placeholder="Jam Keberangkatan" id="jam" name="jam"><br/><br/>
+        Tujuan Keberangkatan :<br/>
+        <input type="text" placeholder="Tujuan Keberangkatan" id="tujuan" name="tujuan"><br/><br/>
+        Jumlah Tiket<br/>
+        <input type="number" min="1" max="10" placeholder="Jumlah Tiket" id="jml_tiket" name="jml_tiket"><br/><br/>
+       <button class="button" type="submit">SUBMIT</button>
+    </div>
+  </body>
+</html>
